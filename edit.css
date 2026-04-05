@@ -1,0 +1,165 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #eef2ff, #f8fafc);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: #4F46E5;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+
+.navbar a.active {
+    background: white;
+    color: #4F46E5;
+    font-weight: bold;
+}
+
+
+.active {
+    background: white;
+    color: #4F46E5;
+    font-weight: bold;
+}
+.container {
+    width: calc(100% - 32px);
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.date-input {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    width: 60%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.subject-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    margin-top: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fafafa;
+}
+
+.subject-name {
+    font-weight: bold;
+}
+
+.options {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.option span {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.present span {
+    background: #e6f9ee;
+    color: #16a34a;
+}
+
+.absent span {
+    background: #fdecec;
+    color: #dc2626;
+}
+
+.holiday span {
+    background: #fff7e6;
+    color: #d97706;
+}
+
+.present input:checked + span {
+    background: #22C55E;
+    color: white;
+}
+
+.absent input:checked + span {
+    background: #EF4444;
+    color: white;
+}
+
+.holiday input:checked + span {
+    background: #F59E0B;
+    color: white;
+}
+
+.btn {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    margin-top: 25px;
+    border-radius: 8px;
+    border: 2px solid #e5e7eb;
+    background: #f9fafb;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #4F46E5;
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 30px auto;
+        padding: 20px;
+    }
+
+    .subject-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .options {
+        flex-wrap: wrap;
+    }
+}

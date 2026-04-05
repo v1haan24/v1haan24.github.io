@@ -1,0 +1,96 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #eef2ff, #f8fafc);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: #4F46E5;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+
+.navbar a:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+
+.navbar a.active {
+    background: white;
+    color: #4F46E5;
+    font-weight: bold;
+}
+
+
+.active {
+    background: white;
+    color: #4F46E5;
+    font-weight: bold;
+}
+
+.container {
+    width: calc(100% - 32px);
+    max-width: 600px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.section {
+    margin-top: 25px;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.btn {
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 14px;
+    border-radius: 8px;
+    border: 2px solid #e5e7eb;
+    background: #f9fafb;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #4F46E5;
+    color: white;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 30px auto;
+        padding: 20px;
+    }
+}

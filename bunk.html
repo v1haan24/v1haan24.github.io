@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bunk Calculator</title>
+    <link rel="stylesheet" href="bunk.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<div class="navbar">
+    <a href="home.html">Home</a>
+    <a href="attendance.html">Mark</a>
+    <a href="edit.html">Edit</a>
+    <a href="stats.html">Stats</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="bunk.html" class="active">Bunk</a>
+    <a href="setting.html">Settings</a>
+</div>
+
+<div class="container">
+
+<h1>Bunk Calculator</h1>
+
+<label>Select Subject</label><br>
+<select id="subjectSelect"></select><br><br>
+
+<label>Upcoming Lectures</label><br>
+<input type="number" id="futureLectures"><br><br>
+
+<button class="btn">Calculate</button>
+
+<div class="result"></div>
+
+<canvas id="bunkChart"></canvas>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="bunk.js"></script>
+
+</body>
+</html>

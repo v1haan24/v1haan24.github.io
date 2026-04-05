@@ -1,0 +1,106 @@
+body {
+    font-family: Arial;
+    background: linear-gradient(to right, #eef2ff, #f8fafc);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background: #4F46E5;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.navbar a.active {
+    background: white;
+    color: #4F46E5;
+}
+
+.container {
+    width: calc(100% - 32px);
+    max-width: 650px;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.overall {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.insight {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+td, th {
+    min-width: 90px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background: #4F46E5;
+    color: white;
+}
+
+.red {
+    color: #dc2626;
+    font-weight: bold;
+}
+
+.orange {
+    color: #d97706;
+    font-weight: bold;
+}
+
+.green {
+    color: #16a34a;
+    font-weight: bold;
+}
+
+td.red { background: #fee2e2; }
+td.orange { background: #fff7ed; }
+td.green { background: #ecfdf5; }
+
+canvas {
+    margin-top: 25px;
+    max-width: 100%;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 30px auto;
+        padding: 20px;
+    }
+}
